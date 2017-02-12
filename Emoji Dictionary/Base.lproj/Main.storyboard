@@ -53,28 +53,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="⛪️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYX-Nw-p3C">
-                                <rect key="frame" x="200.5" y="60" width="199" height="237.5"/>
+                                <rect key="frame" x="200" y="60" width="199" height="237.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="199"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-LT-kqW">
-                                <rect key="frame" x="240" y="355" width="120" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Class: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSR-0M-Jwo">
+                                <rect key="frame" x="227" y="433" width="147" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created in 2008" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Q-6w-Ssp">
+                                <rect key="frame" x="238" y="470" width="124.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a Church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-LT-kqW">
+                                <rect key="frame" x="237" y="399" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="85Q-6w-Ssp" firstAttribute="top" secondItem="FSR-0M-Jwo" secondAttribute="bottom" constant="16.5" id="O5X-sL-I4m"/>
                             <constraint firstItem="5YD-LT-kqW" firstAttribute="centerX" secondItem="Yad-6y-hSr" secondAttribute="centerX" id="PWv-lU-Y4i"/>
+                            <constraint firstItem="85Q-6w-Ssp" firstAttribute="centerX" secondItem="Yad-6y-hSr" secondAttribute="centerX" id="Uyg-t7-ngX"/>
+                            <constraint firstItem="FSR-0M-Jwo" firstAttribute="top" secondItem="5YD-LT-kqW" secondAttribute="bottom" constant="14" id="oOB-dP-icg"/>
                             <constraint firstItem="NYX-Nw-p3C" firstAttribute="centerX" secondItem="Yad-6y-hSr" secondAttribute="centerX" id="s9r-iA-rTW"/>
                             <constraint firstItem="NYX-Nw-p3C" firstAttribute="top" secondItem="J9D-Y8-xy8" secondAttribute="bottom" constant="40" id="tMb-Gu-inv"/>
                             <constraint firstItem="5YD-LT-kqW" firstAttribute="top" secondItem="NYX-Nw-p3C" secondAttribute="bottom" constant="57.5" id="w1V-AU-3SR"/>
+                            <constraint firstItem="FSR-0M-Jwo" firstAttribute="centerX" secondItem="Yad-6y-hSr" secondAttribute="centerX" id="y8w-vY-Dvh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="DefinitionLabel" destination="5YD-LT-kqW" id="z3m-3N-R7z"/>
+                        <outlet property="EMojiBirthYear" destination="85Q-6w-Ssp" id="lxf-Ks-THA"/>
+                        <outlet property="EmojiCategory" destination="FSR-0M-Jwo" id="jb9-BL-f2l"/>
                         <outlet property="EmojiPic" destination="NYX-Nw-p3C" id="xi9-hk-HOU"/>
                     </connections>
                 </viewController>

@@ -10,9 +10,11 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
+    @IBOutlet weak var EmojiCategory: UILabel!
+    @IBOutlet weak var EMojiBirthYear: UILabel!
     @IBOutlet weak var DefinitionLabel: UILabel!
     
-    var emoji = "No Emoji"
+    var emoji = Emoji()
     
     @IBOutlet weak var EmojiPic: UILabel!
     
@@ -20,12 +22,11 @@ class DefinitionViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        EmojiPic.text = emoji
-        
-        if emoji == "😀" {
-        
-        DefinitionLabel.text = "This is a smiley face"
-        }
+        EmojiPic.text = emoji.string_emoji
+        DefinitionLabel.text = emoji.definition
+        EmojiCategory.text = "Category: \(emoji.category)"
+        EMojiBirthYear.text  = "Creation Date: \(emoji.creation_year)"
+
         
     }
 
@@ -33,5 +34,10 @@ class DefinitionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    
 
 }
+
+
